@@ -33,3 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   changeLanguage('en');
 });
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+if (isMobile()) {
+  document.querySelector('.links').style.position = 'relative';
+}
