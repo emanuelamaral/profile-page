@@ -41,17 +41,18 @@ a {
 
 hr {
   border: 2px solid #00ff00;
-  margin: 5rem 0;
+  margin-top: 10px;
 }
 
 .links {
   position: fixed;
-  top: 2rem;
+  top: 5rem;
   right: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #00ff00;
   padding: 1rem;
   font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 0 10px #00ff00;
 }
 
 .links table {
@@ -64,6 +65,47 @@ hr {
 }
 
 .links a:hover {
-  color: #ff00ff;
+  color: #000;
+  background-color: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
 }
 
+.language-selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 1000;
+  border-bottom: 1px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+}
+
+.language-selector button {
+  background-color: transparent;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 5px 15px;
+  margin: 0 5px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.language-selector button:hover {
+  color: #000;
+  background-color: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.language-selector button.active {
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  margin-top: 60px;
+}

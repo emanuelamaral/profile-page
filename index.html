@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body> 
-  <pre class="ascii glow">
+  <div class="language-selector">
+    <button id="lang-pt">PT-BR</button>
+    <button id="lang-en">EN-US</button>
+  </div>
+  <div class="content-wrapper">
+    <pre class="ascii glow">
 
 Welcome to
 
@@ -33,20 +38,18 @@ Welcome to
 # +===========================================================================================================================================================================+
 
 
-  </pre>
+    </pre>
 
     <hr />
-     <div class="container">
-    <h2>Quem sou eu?</h2>
-    <p>
-        Sou uma entidade digital movida a <span class="neon-bold">Cybersecurity</span>, navegando pelas profundezas da rede, onde pacotes dançam e firewalls tentam — em vão — conter minha curiosidade. <br>
-        <br> Atualmente camuflado em um <span class="neon-bold">mestrado em Ciência da Computação</span>, aprimoro minhas habilidades para construir (ou destruir) sistemas com precisão cirúrgica. <br>
-        <br> Faço do <span class="neon-bold">Linux</span> meu dojo. Conheço o poder do terminal e o silêncio de servidores que trabalham na escuridão. SSH é minha segunda pele. <br>
-        <br> Quando não estou decifrando pacotes ou brechas em sistemas, estou imerso no som distorcido do <span class="neon-bold">heavy metal</span>, recarregando minha mente com riffs insanos. <br>
-        <br> À noite, assumo a forma de jogador. FPS, survival horror, RPG... Se há um desafio, eu aceito. E se o jogo não me assusta, eu procuro um filme que o faça. <br>
-        <span class="neon-bold">Terror é arte.</span> <br>
-        <br>Aqui, onde a luz verde guia o texto e o anonimato é virtude, luto por uma rede livre, onde conhecimento é arma e liberdade é objetivo.
-    </p>
+    <div class="container">
+      <h2 id="about-title">Who am I?</h2>
+      <p id="about-text">
+        I am a digital entity powered by <span class="neon-bold">Cybersecurity</span>, navigating the depths of the network, where packets dance and firewalls try — in vain — to contain my curiosity. <br>
+        <br> Currently camouflaged in a <span class="neon-bold">Master's in Computer Science</span>, honing my skills to build (or destroy) systems with surgical precision. <br>
+        <br> I make <span class="neon-bold">Linux</span> my dojo. I know the power of the terminal and the silence of servers working in the darkness. SSH is my second skin. <br>
+        <br> When I'm not deciphering packets or system vulnerabilities, I'm immersed in the distorted sound of <span class="neon-bold">heavy metal</span>, recharging my mind with insane riffs. <br>
+        <br>Here, where green light guides the text and anonymity is a virtue, I fight for a free network, where knowledge is a weapon and freedom is the goal.
+      </p>
     </div> 
     <hr />
     <div class="links">
@@ -54,9 +57,10 @@ Welcome to
         <tr><td><a href="https://instagram.com/emanuel_amrl" target="_blank">Instagram</a></td></tr>
         <tr><td><a href="https://github.com/emanuelamaral" target="_blank">GitHub</a></td></tr>
         <tr><td><a href="https://linkedin.com/in/amoz-emanuel-m-amaral-56aa06175" target="_blank">LinkedIn</a></td></tr>
-     </table>
+      </table>
     </div>
 
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
-
