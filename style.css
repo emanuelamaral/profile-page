@@ -4,12 +4,33 @@ body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
+
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100vw;
 }
+
+
+.container-text,
+.container-ascii {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container-ascii {
+  text-align: right;
+  overflow: hidden;
+}
+
+
 
 .glow {
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
@@ -17,10 +38,10 @@ body {
 
 .ascii {
   white-space: pre;
-  font-size: 12px;
-  text-align: left;
-  margin-left: 0;
-  padding-left: 10px;
+  font-size: 8px;
+  text-align: center;
+  overflow-x: auto;
+  padding: 10px 0;
 }
 
 h2, h3 {
@@ -46,22 +67,27 @@ hr {
 
 .links {
   position: fixed;
-  top: 5rem;
-  right: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  top: 80px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid #00ff00;
-  padding: 1rem;
+  padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   box-shadow: 0 0 10px #00ff00;
+  z-index: 999;
 }
 
 .links table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .links a {
   color: #00ff00;
   text-decoration: none;
+  display: block;
+  padding: 5px;
+  font-size: 14px;
 }
 
 .links a:hover {
@@ -76,7 +102,7 @@ hr {
   left: 0;
   right: 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 0;
   z-index: 1000;
   border-bottom: 1px solid #00ff00;
@@ -107,5 +133,74 @@ hr {
 }
 
 .content-wrapper {
-  margin-top: 60px;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .container-text,
+  .container-ascii {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .container-ascii {
+    margin-top: 20px;
+  }
+  
+  .ascii {
+    font-size: 6px;
+    text-align: center;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ascii {
+    font-size: 12px;
+  }
+  
+  .links {
+    right: 30px;
+    padding: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .ascii {
+    font-size: 6px;
+  }
+  
+  .links {
+    position: static;
+    margin: 20px auto;
+    width: 80%;
+    top: auto;
+    right: auto;
+  }
+  
+  .content-wrapper {
+    margin-top: 50px;
+  }
+  
+  .language-selector button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
 }

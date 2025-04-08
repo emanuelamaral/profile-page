@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   const translations = {
     'en': {
-      'about-title': 'Who am I?',
-      'about-text': 'I am a digital entity powered by <span class="neon-bold">Cybersecurity</span>, navigating the depths of the network, where packets dance and firewalls try — in vain — to contain my curiosity. <br><br> Currently camouflaged in a <span class="neon-bold">Master\'s in Computer Science</span>, honing my skills to build (or destroy) systems with surgical precision. <br><br> I make <span class="neon-bold">Linux</span> my dojo. I know the power of the terminal and the silence of servers working in the darkness. SSH is my second skin. <br><br> When I\'m not deciphering packets or system vulnerabilities, I\'m immersed in the distorted sound of <span class="neon-bold">heavy metal</span>, recharging my mind with insane riffs. <br><br>Here, where green light guides the text and anonymity is a virtue, I fight for a free network, where knowledge is a weapon and freedom is the goal.'
+      'about-title': '============================= whoami? ============================= ',
+      'about-text': ' - As a <span class="neon-bold">Cybersecurity</span> enthusiastic, I navigate the digital realm with precision, analyzing network traffic and identifying vulnerabilities where others see only noise. Firewalls are challenges to overcome, not barriers.<br><br> - Currently pursuing a <span class="neon-bold">Master\'s in Computer Science</span>, focusing on advanced system architectures and security protocols. My research blends theoretical knowledge with practical penetration testing techniques.<br><br> - <span class="neon-bold">Linux</span> is my primary environment, where I leverage the terminal\'s full potential to automate tasks, analyze systems, and maintain infrastructure. SSH connections are my daily routine.<br><br> - Beyond code and security audits, I find inspiration in the complex rhythms of <span class="neon-bold">heavy metal</span>, which mirrors the patterns I work with in cybersecurity.<br><br> - In this digital frontier where green terminals illuminate the path, I advocate for open knowledge and ethical hacking as tools to strengthen systems rather than exploit them.'
     },
     'pt': {
-      'about-title': 'Quem sou eu?',
-      'about-text': 'Sou uma entidade digital movida a <span class="neon-bold">Cybersecurity</span>, navegando pelas profundezas da rede, onde pacotes dançam e firewalls tentam — em vão — conter minha curiosidade. <br><br> Atualmente camuflado em um <span class="neon-bold">mestrado em Ciência da Computação</span>, aprimoro minhas habilidades para construir (ou destruir) sistemas com precisão cirúrgica. <br><br> Faço do <span class="neon-bold">Linux</span> meu dojo. Conheço o poder do terminal e o silêncio de servidores que trabalham na escuridão. SSH é minha segunda pele. <br><br> Quando não estou decifrando pacotes ou brechas em sistemas, estou imerso no som distorcido do <span class="neon-bold">heavy metal</span>, recarregando minha mente com riffs insanos. <br><br>Aqui, onde a luz verde guia o texto e o anonimato é virtude, luto por uma rede livre, onde conhecimento é arma e liberdade é objetivo.'
-    }
+      'about-title': '=============================  Quem sou eu? ============================= ',
+      'about-text': ' - Como entusiasta em <span class="neon-bold">Cybersecurity</span>, navego pelo mundo digital com precisão, analisando tráfego de rede e identificando vulnerabilidades onde outros veem apenas ruído. Firewalls são desafios a superar, não barreiras.<br><br> - Atualmente cursando um <span class="neon-bold">mestrado em Ciência da Computação</span>, com foco em arquiteturas de sistemas avançadas e protocolos de segurança. Minha pesquisa combina conhecimento teórico com técnicas práticas de penetration testing.<br><br> - O <span class="neon-bold">Linux</span> é meu ambiente principal, onde aproveito todo o potencial do terminal para automatizar tarefas, analisar sistemas e manter infraestruturas. Conexões SSH são minha rotina diária.<br><br> - Além de código e auditorias de segurança, encontro inspiração nos ritmos complexos do <span class="neon-bold">heavy metal</span>, que espelham os padrões com os quais trabalho em cybersecurity.<br><br> - Nesta fronteira digital onde terminais verdes iluminam o caminho, defendo o conhecimento aberto e o hacking ético como ferramentas para fortalecer sistemas, não explorá-los.'
+    }  
   };
 
   const titleElement = document.getElementById('about-title');
@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   changeLanguage('en');
 });
+
